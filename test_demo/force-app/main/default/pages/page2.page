@@ -1,0 +1,13 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  <h1>
+  <apex:outputLink value="{!$Page.page1}">Link Page1.</apex:outputLink>
+  </h1>
+  <br/>
+  <br/><br/><br/><br/>
+   <c:myComponent1 /><br/>
+    <c:myComponent2 /><br/>
+  This is your new Page
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>
