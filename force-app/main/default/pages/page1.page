@@ -12,10 +12,28 @@
   <c:myComponent1 /><br/>
   <c:myComponent2 /><br/>
   <c:myComponent2 /><br/>
-  
-
   This is your new Page
   <!-- End Default Content REMOVE THIS -->
   <!-- End Default Content REMOVE THIS -->
+  <apex:includeLightning />    
+    <div id="LightningComponentid" />
+    <hr></hr>
+    <div id="LightningComponentid2" />      
+    <script>
+    $Lightning.use("c:LightningOutApp", function() {
+        $Lightning.createComponent("c:testComponent",
+          { },
+          "LightningComponentid",
+          function(cmp) {
+             console.log('LWC Componenet added in VF page');
+          });
+           $Lightning.createComponent("c:app",
+          { },
+          "LightningComponentid2",
+          function(cmp) {
+             console.log('LWC Componenet added in VF page');
+          });
+    });
+ </script>
   
 </apex:page>
