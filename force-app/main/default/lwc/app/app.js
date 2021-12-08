@@ -1,7 +1,7 @@
-import { LightningElement } from 'lwc';
+import { LightningElement,wire } from 'lwc';
+import getListObjCustom from '@salesforce/apex/customObject.getListObjCustom';
 
 export default class App extends LightningElement {
-    handleClick(event){
-        alert("ssss");
-    }
+    @wire(getListObjCustom) listObject;
+    
 }

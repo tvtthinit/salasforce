@@ -16,7 +16,7 @@
                  <apex:inputField id="editlanguage" value="{!user.languagelocalekey}"/> 
                  <apex:inputField id="editcommunityNickname" value="{!user.communityNickname}"/> 
              </apex:pageBlockSection>
-             <apex:pageBlockSection id="editContactSection" columns="2" title="{!$Label.site.contact_information}">
+             <apex:pageBlockSection id="editlistObjectection" columns="2" title="{!$Label.site.contact_information}">
                  <apex:inputField id="editfirstName" value="{!user.firstName}"/> 
                  <apex:inputField id="editemail" value="{!user.email}"/> 
                  <apex:inputField id="editlastName" value="{!user.lastName}"/> 
@@ -49,7 +49,7 @@
                      <apex:outputField id="detaillanguage" value="{!user.languagelocalekey}"/> 
                      <apex:outputField id="detailcommunityNickname" value="{!user.communityNickname}"/> 
                  </apex:pageBlockSection>
-                 <apex:pageBlockSection id="viewContactSection" columns="2" title="{!$Label.site.contact_information}">
+                 <apex:pageBlockSection id="viewlistObjectection" columns="2" title="{!$Label.site.contact_information}">
                      <apex:outputField id="detailemail" value="{!user.email}"/> 
                      <apex:outputField id="detailfirstName" value="{!user.firstName}"/> 
                      <apex:outputField id="detaillastName" value="{!user.lastName}"/> 

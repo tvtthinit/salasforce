@@ -5,5 +5,15 @@
     <h1 style="font-size: 40px;color:red">This is test</h1><br/>
     <h1 style="font-size: 40px;color:red">This is test</h1><br/>
     <h1 style="font-size: 40px;color:red">This is test</h1><br/>
-    <lightning-button label="handleClick show alert"   onclick={handleClick}></lightning-button>
+    
+    <lightning-card title="customeABC__c Example" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <template if:true={listObject.data}>
+                <template for:each={listObject.data} for:item="itemObject">
+                    <p key={itemObject.Id}>{itemObject.title__c}:::----:::::{itemObject.Id} </p>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+
 </template>
