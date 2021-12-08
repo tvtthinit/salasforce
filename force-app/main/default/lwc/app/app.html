@@ -10,7 +10,7 @@
         <div class="slds-m-around_medium">
             <template if:true={listObject.data}>
                 <template for:each={listObject.data} for:item="itemObject">
-                    <p key={itemObject.Id}>{itemObject.title__c}:::----:::::{itemObject.Id} </p>
+                    <p key={itemObject.Id}>{itemObject.title__c}:::----:::::{itemObject.Id}:::-------::::{itemObject.Name} </p>
                 </template>
             </template>
         </div>
